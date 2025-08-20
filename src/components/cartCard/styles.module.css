@@ -1,0 +1,64 @@
+.cartCard {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+
+.productInfo {
+  flex-grow: 1;
+}
+
+.productName {
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+}
+
+.productPrice {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.quantityControls button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.removeButton {
+  margin-top: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.totalPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 16px;
+}

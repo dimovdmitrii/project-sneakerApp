@@ -1,0 +1,15 @@
+.cart {
+  padding: 20px;
+}
+
+.cartItemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.totalPrice {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}

@@ -4,7 +4,9 @@ import Header from "./components/header";
 import Main from "./pages/main";
 import Cart from "./pages/cart";
 import Contacts from "./pages/contacts";
-import CartProvider from "./context/cartContext";
+import { CartProvider } from "./context/cartContext";
+import Footer from "./components/footer";
+
 function App() {
   return (
     <CartProvider>
@@ -16,9 +18,10 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="*" element={<h1>404 Page Not Found</h1>} />
         </Routes>
-        {/* Footer */}
+        <Footer />
       </div>
     </CartProvider>
   );
 }
+
 export default App;

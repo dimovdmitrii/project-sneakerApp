@@ -3,7 +3,8 @@
   background-color: #3b3c3d;
   justify-content: space-between;
   align-items: center;
-  padding: 43px 13%;
+  padding: 43px 250px;
+
   color: white;
   nav {
     display: flex;

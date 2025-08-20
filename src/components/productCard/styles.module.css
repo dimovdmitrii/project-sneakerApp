@@ -1,0 +1,46 @@
+.card {
+  width: 386px;
+  height: 393px;
+  border-radius: 42px;
+  overflow: hidden;
+  border: 2px solid #00000026;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.productImage {
+  width: 278px;
+  height: 127px;
+  object-fit: cover;
+}
+
+.productName {
+  font-size: 24px;
+  font-weight: 400;
+  padding: 32px 63px 127px 39px;
+}
+
+.productPrice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.button {
+  background-color: white;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button:hover {
+  background-color: white;
+}

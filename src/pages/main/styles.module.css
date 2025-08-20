@@ -1,0 +1,27 @@
+.bannerContainer {
+  padding: 28px 250px 72px 240px;
+  width: 100%;
+}
+.productsContainer {
+  justify-content: center;
+  padding: 43px 13%;
+}
+.Banner {
+  width: 1440px;
+}
+.productsHeader {
+  border-bottom: 1px solid #eaeaea;
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: bold;
+    padding-bottom: 37px;
+  }
+}
+.productsGrid {
+  padding-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 131px;
+  justify-content: center;
+}
