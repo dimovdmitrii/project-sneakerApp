@@ -1,43 +1,25 @@
-/* .header {
-  display: flex;
-  background-color: #3b3c3d;
-  justify-content: space-between;
-  align-items: center;
-  padding: 43px 13%;
-
-  color: white;
-  nav {
-    display: flex;
-    gap: 64px;
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 15px;
-      font-weight: 600;
-    }
-  }
-} */
 .header {
   background-color: #3b3c3d;
   color: white;
-  padding: 43px 0; /* Удаляем горизонтальный padding отсюда */
+  padding: 43px 0;
 }
-
 .headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1920px; /* Ограничиваем максимальную ширину */
-  margin: 0 auto; /* Центрируем блок по горизонтали */
-  padding: 0 250px; /* Добавляем padding внутри контейнера */
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 250px;
 }
-
-/* Переносим вложенные селекторы на новый контейнер */
+.headerContainer h1 {
+  font-size: 20px;
+  font-weight: 900;
+}
 .headerContainer nav {
   display: flex;
   gap: 64px;
 }
-
 .headerContainer nav a {
   color: white;
   text-decoration: none;

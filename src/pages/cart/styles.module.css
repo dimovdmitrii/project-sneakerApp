@@ -1,17 +1,142 @@
-.cart {
-  padding: 20px;
+/* ==================================== */
+/* Стили для всей страницы корзины    */
+/* ==================================== */
+.cartPage {
+  padding: 50px 250px;
+  max-width: 1920px;
   width: 100%;
-  flex-grow: 1;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 164px;
+  padding-bottom: 10px;
+}
+
+.cartContainer {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
 }
 
 .cartItemsList {
+  flex: 2; /* Занимает 2/3 доступного пространства */
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
+}
+
+.summaryBox {
+  flex: 1; /* Занимает 1/3 доступного пространства */
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.summaryTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 15px;
+}
+
+.summaryList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.summaryItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #555;
 }
 
 .totalPrice {
-  /* margin-top: 20px; */
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  border-top: 1px solid #d3d3d3;
   font-weight: bold;
+  font-size: 18px;
+}
+
+.emptyCartMessage {
+  font-size: 18px;
+  color: #777;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ==================================== */
+/* Стили для карточки товара (CartCard)   */
+/* ==================================== */
+.cartCard {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eaeaea;
+}
+
+.productImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-right: 25px;
+}
+
+.productInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.detailsAndPrice {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin: 0;
+}
+
+.productPrice {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 5px;
+}
+
+.removeButton {
+  background-color: #f6f6f6;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.trashIcon {
+  width: 16px;
+  height: 16px;
+  fill: #d3d3d3;
 }

@@ -1,64 +1,65 @@
 .cartCard {
   display: flex;
   align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 16px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10x;
+  width: 903px;
+  height: 134px;
+  border: 1px solid rgba(250, 250, 250, 1);
+  background-color: rgba(250, 250, 250, 1);
 }
 
 .productImage {
-  width: 100px;
-  height: 100px;
+  width: 197px;
+  height: 90px;
   object-fit: cover;
-  margin-right: 16px;
+  margin-right: 57px;
 }
 
 .productInfo {
-  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically center name, price, and delete icon */
+  flex-grow: 1; /* This will make the container take up remaining space */
+  border-left: 1px solid rgba(0, 0, 0, 0.5);
+  padding-left: 36px;
+  height: 100px;
+}
+
+.detailsAndPrice {
+  display: flex;
+  flex-direction: column;
 }
 
 .productName {
-  font-size: 1.2rem;
-  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 100%;
 }
 
 .productPrice {
-  font-size: 1rem;
+  font-size: 14px;
   font-weight: bold;
-  color: #333;
-}
-
-.quantityControls {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-}
-
-.quantityControls button {
-  background-color: #333;
-  color: #fff;
-  border: none;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  cursor: pointer;
+  color: #000;
+  margin-top: 5px; /* Spacing between name and price */
 }
 
 .removeButton {
-  margin-top: 10px;
-  background-color: #f44336;
-  color: white;
+  background-color: #f6f6f6;
   border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 50%; /* Make the button circular */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  padding: 0;
 }
-.totalPrice {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-  margin-top: 16px;
+
+.trashIcon {
+  width: 16px;
+  height: 16px;
+  fill: #d3d3d3; /* A light grey color for the icon */
 }

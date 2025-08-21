@@ -81,5 +81,3 @@ export const CartProvider = ({ children }) => {
 
 export const useCart = () => useContext(CartContext);
 export default CartProvider;
-// https://asset.snipes.com/images/f_auto,q_100,d_fallback-sni.png/b_rgb:f8f8f8,c_pad,w_680,h_680/dpr_1.0/01126425_1/nike-air-force-1-'07-wei%c3%9f-1727-1
-// https://asset.snipes.com/images/f_auto,q_100,d_fallback-sni.png/b_rgb:f8f8f8,c_pad,w_680,h_680/dpr_1.0/02225263_1/jordan-wmns-air-jordan-1-mid-schwarz-27294-1

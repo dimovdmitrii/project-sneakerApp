@@ -1,37 +1,29 @@
-import React, { useContext } from "react";
+import React from "react";
 import styles from "./styles.module.css";
-import { CartContext, useCart } from "../../context/cartContext";
+import { useCart } from "../../context/cartContext";
 
 function CartCard({ item }) {
-  const { removeItem, updateItemQuantity } = useContext(CartContext);
-
-  const handleDecreaseQuantity = () => {
-    if (item.quantity > 1) {
-      updateItemQuantity(item.id, item.quantity - 1);
-    }
-  };
-
-  const handleIncreaseQuantity = () => {
-    updateItemQuantity(item.id, item.quantity + 1);
-  };
+  const { removeItem } = useCart();
 
   return (
     <div className={styles.cartCard}>
       <img src={item.image} alt={item.name} className={styles.productImage} />
       <div className={styles.productInfo}>
-        <h3 className={styles.productName}>{item.name}</h3>
-        <p className={styles.productPrice}>Цена:{item.price} €</p>
-        <p className={styles.productQuantity}>Количество: {item.quantity}</p>
-        <div className={styles.quantityControls}>
-          <button onClick={handleDecreaseQuantity}>-</button>
-          <span>{item.quantity}</span>
-          <button onClick={handleIncreaseQuantity}>+</button>
+        <div className={styles.detailsAndPrice}>
+          <div className={styles.productName}>{item.name}</div>
+          <div className={styles.productPrice}>Цена: {item.price} €</div>
         </div>
         <button
           className={styles.removeButton}
           onClick={() => removeItem(item.id)}
         >
-          Удалить
+          <svg
+            className={styles.trashIcon}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+          >
+            <path d="M135.2 17.7L128 32H32C14.3 32 0 46.3 0 64S14.3 96 32 96H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H320l-7.2-14.7C307.4 6.8 296.3 0 284.2 0H163.8c-12.1 0-23.2 6.8-28.6 17.7zM416 128H32L53.2 467c1.6 25.3 22.6 45 47.9 45H346.9c25.3 0 46.3-19.7 47.9-45L416 128z" />
+          </svg>
         </button>
       </div>
     </div>
