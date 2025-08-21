@@ -1,5 +1,7 @@
 .cart {
   padding: 20px;
+  width: 100%;
+  flex-grow: 1;
 }
 
 .cartItemsList {
@@ -9,7 +11,7 @@
 }
 
 .totalPrice {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   font-size: 1.5rem;
   font-weight: bold;
 }

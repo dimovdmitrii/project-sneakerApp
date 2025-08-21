@@ -23,18 +23,20 @@ function Main() {
 
   return (
     <main>
-      <div className={styles.bannerContainer}>
-        <img src={bannerImage} alt="Banner" className={styles.Banner} />
-      </div>
-      <div className={styles.productsContainer}>
-        <div className={styles.productsHeader}>
-          <h1>Товары</h1>
+      <div className={styles.mainContainer}>
+        <div className={styles.bannerContainer}>
+          <img src={bannerImage} alt="Banner" className={styles.Banner} />
         </div>
+        <div className={styles.productsContainer}>
+          <div className={styles.productsHeader}>
+            <h1>Товары</h1>
+          </div>
 
-        <div className={styles.productsGrid}>
-          {products.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          <div className={styles.productsGrid}>
+            {products.slice(0, 3).map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
         </div>
       </div>
     </main>

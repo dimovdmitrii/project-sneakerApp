@@ -1,8 +1,9 @@
-.footer {
+/* .footer {
   background-color: #3b3c3d;
   color: white;
   padding: 43px 13%;
   margin-top: auto;
+  flex-shrink: 0;
 }
 
 .footerContent {
@@ -13,6 +14,50 @@
   gap: 20px;
 }
 
+.contactInfo h4 {
+  margin-bottom: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+  font-size: 1.5rem;
+}
+
+.copyright {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} */
+/* Убираем padding у самого футера */
+.footer {
+  background-color: #3b3c3d;
+  color: white;
+  padding: 43px 0; /* Оставляем только вертикальный padding */
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.footerContent {
+  /* Применяем стили для центрирования к этому контейнеру */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  max-width: 1920px; /* Ограничиваем максимальную ширину */
+  margin: 0 auto; /* Центрируем по горизонтали */
+  padding: 0 13%; /* Добавляем внутренние отступы */
+}
+
+/* Остальные стили оставляем без изменений */
 .contactInfo h4 {
   margin-bottom: 10px;
 }

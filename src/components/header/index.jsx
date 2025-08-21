@@ -17,16 +17,18 @@ const menuList = [
 function Header() {
   return (
     <header className={styles.header}>
-      <h1>Сникер - магазин</h1>
-      <nav>
-        {menuList.map((menuItem) => {
-          return (
-            <NavLink key={menuItem.title} to={menuItem.path}>
-              {menuItem.title}
-            </NavLink>
-          );
-        })}
-      </nav>
+      <div className={styles.headerContainer}>
+        <h1>Сникер - магазин</h1>
+        <nav>
+          {menuList.map((menuItem) => {
+            return (
+              <NavLink key={menuItem.title} to={menuItem.path}>
+                {menuItem.title}
+              </NavLink>
+            );
+          })}
+        </nav>
+      </div>
     </header>
   );
 }
