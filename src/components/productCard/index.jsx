@@ -19,7 +19,9 @@ const ProductCard = ({ product }) => {
       />
       <div className={styles.cardContent}>
         <h3 className={styles.productName}>{product.name}</h3>
+        <p className={styles.cena}>цена:</p>
         <p className={styles.productPrice}>{product.price} €</p>
+
         <button onClick={handleAddToCart} className={styles.button}>
           <img src={Button} alt="" />
         </button>

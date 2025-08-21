@@ -20,7 +20,7 @@ function CartCard({ item }) {
       <img src={item.image} alt={item.name} className={styles.productImage} />
       <div className={styles.productInfo}>
         <h3 className={styles.productName}>{item.name}</h3>
-        <p className={styles.productPrice}>Цена: {item.price} €</p>
+        <p className={styles.productPrice}>Цена:{item.price} €</p>
         <p className={styles.productQuantity}>Количество: {item.quantity}</p>
         <div className={styles.quantityControls}>
           <button onClick={handleDecreaseQuantity}>-</button>

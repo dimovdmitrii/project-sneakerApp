@@ -16,31 +16,51 @@
   width: 278px;
   height: 127px;
   object-fit: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 49px;
 }
 
 .productName {
   font-size: 24px;
   font-weight: 400;
-  padding: 32px 63px 127px 39px;
+  padding: 32px 63px 0 39px;
 }
 
 .productPrice {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 700;
   color: #333;
-  margin: 0;
+  position: relative;
+  top: 50px;
+  left: 39px;
 }
 
 .button {
   background-color: white;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  position: relative;
+  top: 12px;
+  left: 310px;
 }
 
 .button:hover {
   background-color: white;
+}
+.cena {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #666666;
+  position: relative;
+  top: 52px;
+  left: 39px;
 }

@@ -2,15 +2,15 @@ import styles from "./styles.module.css";
 import { NavLink } from "react-router";
 const menuList = [
   {
-    title: "Main",
+    title: "Главная",
     path: "/",
   },
   {
-    title: "Cart",
+    title: "Корзина",
     path: "/cart",
   },
   {
-    title: "Contacts",
+    title: "Контакты",
     path: "/contacts",
   },
 ];
@@ -22,7 +22,13 @@ function Header() {
         <nav>
           {menuList.map((menuItem) => {
             return (
-              <NavLink key={menuItem.title} to={menuItem.path}>
+              <NavLink
+                key={menuItem.title}
+                to={menuItem.path}
+                style={({ isActive }) => ({
+                  color: isActive ? "#FFFFFF" : "#FFFFFF80",
+                })}
+              >
                 {menuItem.title}
               </NavLink>
             );
