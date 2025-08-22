@@ -1,9 +1,12 @@
-/* .bannerContainer {
-  padding: 28px 250px 72px 240px;
-  width: 100%;
+.mainContainer {
+  max-width: 1920px;
+  margin: 0 auto;
 }
+.bannerContainer {
+  padding: 28px 250px 72px 240px;
+}
+
 .productsContainer {
-  justify-content: center;
   padding: 43px 13%;
 }
 .Banner {
@@ -11,52 +14,13 @@
 }
 .productsHeader {
   border-bottom: 1px solid #eaeaea;
-  h1 {
-    font-size: 36px;
-    font-weight: 700;
-    font-style: bold;
-    padding-bottom: 37px;
-  }
 }
-.productsGrid {
-  padding-top: 45px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 131px;
-  justify-content: center;
-} */
-/* Новый контейнер для центрирования и ограничения ширины */
-.mainContainer {
-  max-width: 1920px; /* Ограничиваем максимальную ширину */
-  margin: 0 auto;
-}
-
-/* Удаляем лишние свойства из старых контейнеров */
-.bannerContainer {
-  padding: 28px 250px 72px 240px; /* Сохраняем padding, но без width: 100% */
-}
-
-.productsContainer {
-  padding: 43px 13%;
-  /* Удаляем justify-content и padding, так как они будут управляться .mainContainer */
-}
-
-/* Оставляем стили для дочерних элементов */
-.Banner {
-  width: 1440px; /* Убедитесь, что изображение растягивается на 100% ширины родителя */
-}
-
-.productsHeader {
-  border-bottom: 1px solid #eaeaea;
-}
-
 .productsHeader h1 {
   font-size: 36px;
   font-weight: 700;
   font-style: bold;
   padding-bottom: 37px;
 }
-
 .productsGrid {
   padding-top: 45px;
   display: grid;

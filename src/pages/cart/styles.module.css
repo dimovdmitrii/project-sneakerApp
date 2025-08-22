@@ -1,6 +1,3 @@
-/* ==================================== */
-/* Стили для всей страницы корзины    */
-/* ==================================== */
 .cartPage {
   padding: 50px 250px;
   max-width: 1920px;
@@ -23,14 +20,14 @@
 }
 
 .cartItemsList {
-  flex: 2; /* Занимает 2/3 доступного пространства */
+  flex: 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 .summaryBox {
-  flex: 1; /* Занимает 1/3 доступного пространства */
+  flex: 1;
   background-color: #f6f6f6;
   border-radius: 15px;
   padding: 25px;
@@ -75,10 +72,6 @@
   text-align: center;
   margin-top: 50px;
 }
-
-/* ==================================== */
-/* Стили для карточки товара (CartCard)   */
-/* ==================================== */
 .cartCard {
   display: flex;
   align-items: center;
