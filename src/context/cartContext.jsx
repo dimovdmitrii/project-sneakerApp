@@ -30,40 +30,13 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  const updateItemQuantity = async (id, quantity) => {
-    try {
-      const response = await axios.put(`${BASE_URL}/cartData/${id}`, {
-        quantity,
-      });
-      setCartItems(
-        cartItems.map((item) => (item.id === id ? response.data : item))
-      );
-    } catch (error) {
-      console.error("Error updating item quantity:", error);
-    }
-  };
-
   const addToCart = async (product) => {
     try {
-      const existingItem = cartItems.find((item) => item.id === product.id);
-
-      if (existingItem) {
-        const response = await axios.put(
-          `${BASE_URL}/cartData/${existingItem.id}`,
-          { quantity: existingItem.quantity + 1 }
-        );
-        setCartItems(
-          cartItems.map((item) =>
-            item.id === product.id ? response.data : item
-          )
-        );
-      } else {
-        const response = await axios.post(`${BASE_URL}/cartData`, {
-          ...product,
-          quantity: 1,
-        });
-        setCartItems([...cartItems, response.data]);
-      }
+      const response = await axios.post(`${BASE_URL}/cartData`, {
+        ...product,
+        quantity: 1,
+      });
+      setCartItems([...cartItems, response.data]);
     } catch (error) {
       console.error("Error adding to cart:", error);
     }
@@ -72,7 +45,6 @@ export const CartProvider = ({ children }) => {
   const value = {
     cartItems,
     removeItem,
-    updateItemQuantity,
     addToCart,
   };
 
@@ -80,4 +52,3 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
-export default CartProvider;

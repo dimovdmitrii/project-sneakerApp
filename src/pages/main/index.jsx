@@ -4,6 +4,7 @@ import axios from "axios";
 import styles from "./styles.module.css";
 import bannerImage from "../../assets/images/banner.png";
 import ProductCard from "../../components/productCard";
+import { CartProvider } from "../../context/cartContext";
 
 function Main() {
   const [products, setProducts] = useState([]);

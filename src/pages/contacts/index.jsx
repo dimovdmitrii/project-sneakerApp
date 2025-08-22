@@ -1,4 +1,10 @@
+import styles from "./styles.module.css";
+
 function Contacts() {
-  return <h1>Contacts Page</h1>;
+  return (
+    <div className={styles.contactsPage}>
+      <h1>Contacts Page</h1>
+    </div>
+  );
 }
 export default Contacts;
