@@ -40,19 +40,11 @@
 
 .button {
   background-color: white;
-  color: #fff;
   border: none;
-  /* padding: 10px 20px; */
-  border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
   position: relative;
   top: 12px;
   left: 310px;
-}
-
-.button:hover {
-  background-color: white;
 }
 .cena {
   font-size: 14px;

@@ -18,48 +18,48 @@
 
 .productInfo {
   display: flex;
-  justify-content: space-between;
-  align-items: center; /* Vertically center name, price, and delete icon */
-  flex-grow: 1; /* This will make the container take up remaining space */
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-grow: 1;
   border-left: 1px solid rgba(0, 0, 0, 0.5);
   padding-left: 36px;
   height: 100px;
 }
 
 .detailsAndPrice {
-  display: flex;
-  flex-direction: column;
+  max-width: 300px;
 }
 
 .productName {
   font-size: 24px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
-  line-height: 100%;
+  line-height: 30px;
 }
 
 .productPrice {
-  font-size: 14px;
-  font-weight: bold;
-  color: #000;
-  margin-top: 5px; /* Spacing between name and price */
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 1);
+  margin-top: 12px;
+  min-width: 70px;
 }
 
 .removeButton {
-  background-color: #f6f6f6;
+  background-color: rgba(243, 243, 243, 1);
   border: none;
-  border-radius: 50%; /* Make the button circular */
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border-radius: 50%;
+  width: 76px;
+  height: 76px;
   cursor: pointer;
-  padding: 0;
+  margin-left: 135px;
 }
-
-.trashIcon {
-  width: 16px;
-  height: 16px;
-  fill: #d3d3d3; /* A light grey color for the icon */
+.basketIcon {
+  width: 30px;
+  height: 31px;
+}
+#label {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(102, 102, 102, 1);
 }

@@ -1,14 +1,27 @@
 import React from "react";
+import { useState } from "react";
 import styles from "./styles.module.css";
 import { useCart } from "../../context/cartContext";
-import Button from "..//../assets/icons/button.svg";
+import button from "..//../assets/icons/button.svg";
+import buttonHover from "../../assets/icons/Button-hovering.svg";
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useCart();
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleAddToCart = () => {
     addToCart(product);
   };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const buttonIcon = isHovered ? buttonHover : button;
 
   return (
     <div className={styles.card}>
@@ -22,8 +35,13 @@ const ProductCard = ({ product }) => {
         <p className={styles.cena}>цена:</p>
         <p className={styles.productPrice}>{product.price} €</p>
 
-        <button onClick={handleAddToCart} className={styles.button}>
-          <img src={Button} alt="" />
+        <button
+          onClick={handleAddToCart}
+          className={styles.button}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
+          <img src={buttonIcon} alt="Add to busket" />
         </button>
       </div>
     </div>
