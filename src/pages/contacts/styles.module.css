@@ -1,3 +1,138 @@
-.contactsPage {
-  padding: 0 250px;
+.contactsSection {
+  padding: 50px 13%;
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+.contactsTitle {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(234, 234, 234, 1);
+  padding-bottom: 50px;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Стили для первой колонки (информация и форма) */
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  /* width: 60%;  */
+}
+
+.contactList {
+  padding: 116px 0 67px 15px;
+  font-size: 18px;
+  opacity: 80%;
+  font-weight: 400;
+  line-height: 81%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contactList li {
+  margin-bottom: 13px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.inputRow {
+  display: flex;
+  gap: 39px;
+  margin-bottom: 39px;
+}
+.inputRow input {
+  width: 364px;
+  height: 66px;
+  border-radius: 10px;
+  border-color: rgba(250, 250, 250, 1);
+  padding: 25px 0 26px 21px;
+}
+.formInput {
+  padding: 28px 0 73px 21px;
+  background-color: rgba(250, 250, 250, 1);
+  border: 1px solid rgba(250, 250, 250, 1);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 80%;
+  line-height: 81%;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.messageInput {
+  margin-bottom: 31px;
+  max-width: 767px;
+  max-height: 118px;
+}
+
+.submitButton {
+  align-self: flex-end;
+  padding: 21px 25px;
+  border: none;
+  background-color: rgba(9, 13, 26, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 81%;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #444;
+}
+
+/* Стили для второй колонки (социальные сети) */
+.socialColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 221px;
+  max-width: 458px;
+  background-color: rgba(250, 250, 250, 1);
+  border-radius: 10px;
+  position: relative;
+  bottom: -383px;
+  margin-left: 79px;
+}
+
+.socialTitle {
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 80%;
+  line-height: 81%;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 18px 0 39px 0;
+}
+
+.socialLogos {
+  display: flex;
+  gap: 50px;
+  padding: 0 65px;
+}
+
+.socialLogo {
+  width: 76px;
+  height: 76px;
+  transition: transform 0.3s ease;
+}
+
+.socialLogo:hover {
+  transform: scale(1.1);
 }
