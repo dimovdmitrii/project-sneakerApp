@@ -7,7 +7,6 @@ const Contacts = () => {
   return (
     <section className={styles.contactsSection}>
       <div className={styles.mainContent}>
-        {/* Первая колонка: Заголовок, контакты и форма */}
         <div className={styles.infoColumn}>
           <h1 className={styles.contactsTitle}>Контакты</h1>
 
