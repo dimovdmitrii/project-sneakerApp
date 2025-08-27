@@ -1,7 +1,6 @@
 # Сникер-магазин
 
-![Sneaker Shop Screenshot](src/assets/images/screenshot.png)
-
+![Sneaker Shop Screenshot](./assets/images/screenshot.png)
 
 ## Описание
 Сникер-магазин — это простое React-приложение для демонстрации товаров с возможностью добавления в корзину.  
