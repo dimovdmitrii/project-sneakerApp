@@ -1,12 +1,26 @@
-# React + Vite
+# Сникер-магазин
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Sneaker Shop Screenshot](./assets/images/screenshot.png)
 
-Currently, two official plugins are available:
+## Описание
+Сникер-магазин — это простое React-приложение для демонстрации товаров с возможностью добавления в корзину.  
+Приложение использует Redux Toolkit для управления состоянием корзины и продуктов.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Функционал
+- Просмотр списка товаров с изображениями, названием и ценой.
+- Добавление товаров в корзину через кнопку "Add to Cart".
+- Ховер-эффект на кнопке "Add to Cart".
+- Резиновая адаптивная вёрстка для любых экранов.
+- Адаптивный хедер с навигацией.
 
-## Expanding the ESLint configuration
+## Технологии
+- React
+- Redux Toolkit
+- React-Redux
+- Axios
+- CSS Modules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Установка и запуск
+1. Клонировать репозиторий:
+   ```bash
+   git clone <URL_репозитория>
