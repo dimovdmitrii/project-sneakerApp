@@ -24,4 +24,4 @@
 ## Установка и запуск
 1. Клонировать репозиторий:
    ```bash
-   git clone <URL_репозитория>
+   git clone git@github.com:dimovdmitrii/project-sneakerApp.git
