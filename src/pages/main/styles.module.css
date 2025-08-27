@@ -10,7 +10,8 @@
   padding: 43px 13%;
 }
 .Banner {
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
 }
 .productsHeader {
   border-bottom: 1px solid #eaeaea;
@@ -27,4 +28,9 @@
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 131px;
   justify-content: center;
+}
+@media (max-width: 880px) {
+  .bannerContainer {
+    padding: 28px 20px 32px 20px;
+  }
 }
