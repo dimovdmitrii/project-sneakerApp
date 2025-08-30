@@ -33,6 +33,7 @@ function Cart() {
           </ul>
           <div className={styles.totalPrice}>
             <span className={styles.totalPriceLabel}>Цена:</span>
+
             <span className={styles.totalPriceValue}>
               {totalPrice.toFixed(2)} €
             </span>

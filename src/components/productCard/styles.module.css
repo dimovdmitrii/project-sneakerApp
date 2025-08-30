@@ -55,3 +55,47 @@
   top: 52px;
   left: 39px;
 }
+@media (max-width: 480px) {
+  .card {
+    width: 286px;
+    height: 293px;
+    border-radius: 42px;
+    border: 2px solid #00000026;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+  }
+  .productName {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .productPrice {
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    position: relative;
+    top: 50px;
+    left: 39px;
+  }
+  .cena {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #666666;
+    position: relative;
+    top: 52px;
+    left: 39px;
+  }
+  .productImage {
+    width: 139px;
+    height: 63px;
+    margin-top: 29px;
+  }
+  .button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    top: 12px;
+    left: 220px;
+  }
+}
