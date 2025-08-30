@@ -39,7 +39,9 @@
   margin-bottom: 13px;
   color: rgba(0, 0, 0, 0.5);
 }
-
+li::marker {
+  font-size: 0.7em;
+}
 .contactForm {
   display: flex;
   flex-direction: column;
