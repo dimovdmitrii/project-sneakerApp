@@ -1,4 +1,5 @@
 # Сникер-магазин
+https://dimovdmitrii.github.io/project-sneakerApp/
 
 ![Sneaker Shop Screenshot](https://github.com/dimovdmitrii/project-sneakerApp/blob/main/src/assets/images/screenshot.png?raw=true)
 
