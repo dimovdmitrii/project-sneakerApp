@@ -2,7 +2,6 @@
   background-color: #232425;
   padding: 66px 0 48px 0;
 }
-
 .footerContainer {
   display: flex;
   justify-content: space-between;
@@ -13,7 +12,6 @@
   margin: 0 auto;
   padding: 0 13%;
 }
-
 .contactInfo h4 {
   font-size: 24px;
   font-weight: 400;
@@ -22,7 +20,6 @@
   opacity: 80%;
   color: #ffffff;
 }
-
 .contactInfo p {
   font-size: 18px;
   font-weight: 400;
@@ -31,12 +28,10 @@
   color: rgba(255, 255, 255, 0.5);
   margin-top: 13px;
 }
-
 .socialIcons {
   display: flex;
   gap: 26px;
 }
-
 .socialIcons img {
   width: 32px;
   height: 32px;
@@ -58,13 +53,11 @@
   opacity: 80%;
   color: rgba(255, 255, 255, 0.5);
 }
-
 .subscribe {
   display: flex;
   flex-direction: column;
   color: rgba(255, 255, 255, 0.5);
 }
-
 .subscribe input {
   padding-bottom: 15px;
   border: 1px solid white;
@@ -75,7 +68,6 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   width: 407px;
 }
-
 .subscribe input::placeholder {
   color: rgba(255, 255, 255, 0.5);
   opacity: 80%;

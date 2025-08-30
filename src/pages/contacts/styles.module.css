@@ -12,20 +12,15 @@
   border-bottom: 1px solid rgba(234, 234, 234, 1);
   padding-bottom: 50px;
 }
-
 .mainContent {
   display: flex;
   width: 100%;
   margin: 0 auto;
 }
-
-/* Стили для первой колонки (информация и форма) */
 .infoColumn {
   display: flex;
   flex-direction: column;
-  /* width: 60%;  */
 }
-
 .contactList {
   padding: 116px 0 67px 15px;
   font-size: 18px;
@@ -34,7 +29,6 @@
   line-height: 81%;
   color: rgba(0, 0, 0, 0.5);
 }
-
 .contactList li {
   margin-bottom: 13px;
   color: rgba(0, 0, 0, 0.5);
@@ -47,7 +41,6 @@ li::marker {
   flex-direction: column;
   width: 100%;
 }
-
 .inputRow {
   display: flex;
   gap: 39px;
@@ -70,18 +63,15 @@ li::marker {
   opacity: 80%;
   line-height: 81%;
 }
-
 .formInput:focus {
   outline: none;
   border-color: #007bff;
 }
-
 .messageInput {
   margin-bottom: 31px;
   max-width: 767px;
   max-height: 118px;
 }
-
 .submitButton {
   align-self: flex-end;
   padding: 21px 25px;
@@ -95,12 +85,9 @@ li::marker {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .submitButton:hover {
   background-color: #444;
 }
-
-/* Стили для второй колонки (социальные сети) */
 .socialColumn {
   display: flex;
   flex-direction: column;
@@ -113,7 +100,6 @@ li::marker {
   bottom: -383px;
   margin-left: 79px;
 }
-
 .socialTitle {
   font-size: 20px;
   font-weight: 600;
@@ -122,19 +108,16 @@ li::marker {
   color: rgba(0, 0, 0, 0.7);
   padding: 18px 0 39px 0;
 }
-
 .socialLogos {
   display: flex;
   gap: 50px;
   padding: 0 65px;
 }
-
 .socialLogo {
   width: 76px;
   height: 76px;
   transition: transform 0.3s ease;
 }
-
 .socialLogo:hover {
   transform: scale(1.1);
 }

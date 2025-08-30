@@ -8,14 +8,12 @@
   border: 1px solid rgba(250, 250, 250, 1);
   background-color: rgba(250, 250, 250, 1);
 }
-
 .productImage {
   width: 197px;
   height: 90px;
   object-fit: cover;
   margin-right: 57px;
 }
-
 .productInfo {
   display: flex;
   align-items: center;
@@ -24,18 +22,15 @@
   padding-left: 36px;
   height: 100px;
 }
-
 .detailsAndPrice {
   max-width: 300px;
 }
-
 .productName {
   font-size: 24px;
   font-weight: 400;
   color: rgba(0, 0, 0, 1);
   line-height: 30px;
 }
-
 .productPrice {
   font-size: 24px;
   font-weight: 700;
@@ -43,7 +38,6 @@
   margin-top: 12px;
   min-width: 70px;
 }
-
 .removeButton {
   background-color: rgba(243, 243, 243, 1);
   border: none;
@@ -73,7 +67,6 @@
     font-size: 16px;
     line-height: 20px;
   }
-
   .productPrice {
     font-size: 16px;
     font-weight: 400;
@@ -81,7 +74,6 @@
     margin-top: 12px;
     min-width: 20px;
   }
-
   .removeButton {
     width: 36px;
     height: 36px;
@@ -106,22 +98,19 @@
     text-align: center;
     max-width: 400px;
   }
-
   .productImage {
     width: 100%;
     max-width: 200px;
     margin-right: 0;
   }
-
   .productInfo {
-    border-left: none; /* Убираем вертикальную линию */
+    border-left: none;
     padding-left: 0;
     margin-top: 1rem;
     align-items: flex-start;
   }
-
   .removeButton {
-    margin-left: 0; /* Убираем отступ */
+    margin-left: 0;
     margin-top: 1rem;
   }
 }

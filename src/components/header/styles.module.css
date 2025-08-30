@@ -27,7 +27,6 @@
   font-size: 15px;
   font-weight: 600;
 }
-
 @media screen and (max-width: 880px) {
   .headerContainer {
     padding: 0 40px;
